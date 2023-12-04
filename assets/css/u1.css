@@ -1,0 +1,12 @@
+.status-completed {
+  color: #008000;
+}
+
+.status-pending {
+  color: #CCCC00;
+}
+
+.status-cancelled {
+  color: #800000;
+}
+

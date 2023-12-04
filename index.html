@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/u1.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html"><i class="fas fa-shopping-cart"></i><span>Product</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-expand bg-white shadow mb-4 topbar static-top navbar-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                                    <h3 class="text-dark mb-0">Order Management</h3>
+                                </div>
+                            </div>
+                        </div><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2" style="background:var(--bs-card-cap-bg);">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase fw-bold text-primary text-xs mb-1"><span>New orders</span></div>
+                                            <div class="fw-bold text-dark h5 mb-0"><span style="font-size:16px;">total order</span><br><span style="font-size:16px;">total</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase fw-bold text-success text-xs mb-1"><span>CONFIRMED</span></div>
+                                            <div class="fw-bold text-dark h5 mb-0"><span style="font-size:16px;">total order</span><br><span style="font-size:16px;">total</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-info py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase fw-bold text-info text-xs mb-1"><span>BEING TRANSPORTED</span></div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="fw-bold text-dark h5 mb-0 me-3"><span style="font-size:16px;">total order</span><br><span style="font-size:16px;">total</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-car-side fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase fw-bold text-warning text-xs mb-1"><span>COMPLETED</span></div>
+                                            <div class="fw-bold text-dark h5 mb-0"><span style="font-size:16px;">total order</span><br><span style="font-size:16px;">total</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col d-flex flex-row align-items-xxl-center"><label class="form-label me-2 mb-0" for="createdTime" style="min-width: 105px;">Created Time :</label><input class="form-control-sm me-2 form-control" id="createdTime" type="date" style="min-width: 125px;"><label class="form-label mb-0 me-2" for="completedTime" style="min-width: 125px;">Completed Time:</label><input class="form-control-sm form-control me-2" id="completedTime" type="date" style="min-width: 125px;"><button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-search fs-6"></i></button></div>
+                                        <div class="col-5">
+                                            <div class="d-flex flex-row justify-content-end align-items-center dataTables_filter" id="dataTable_filter"><select class="form-select-sm form-select me-2" aria-label="Status filter" id="statusFilter" style="width:auto;">
+                                                    <option value="All" selected="">All</option>
+                                                    <option value="completed">Completed</option>
+                                                    <option value="pending">Pending</option>
+                                                    <option value="cancelled">Cancelled</option>
+                                                </select><input class="form-control-sm form-control me-2" type="search" aria-controls="dataTable" id="searchInput" placeholder="Search" style="width:216.8px;"><button class="btn btn-primary btn-sm" id="searchButton" type="button">Search</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="dataTable-1" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
+                                        <div>
+                                            <table class="table my-0 align-middle flex-fill" id="dataTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>InvoiceID</th>
+                                                        <th>AccountID</th>
+                                                        <th>CreatedTime</th>
+                                                        <th>CompletedTime</th>
+                                                        <th>Price</th>
+                                                        <th>PaymentMethod</th>
+                                                        <th>ProductDetail</th>
+                                                        <th>Status</th>
+                                                        <th>Update</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#ODER01</td>
+                                                        <td>0001</td>
+                                                        <td>11/10/2023</td>
+                                                        <td>11/12/2023</td>
+                                                        <td>$162,700</td>
+                                                        <td>COD</td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
+                                                        <td><select class="form-select-sm statusSelect statusColor">
+                                                                <option value="completed">Completed</option>
+                                                                <option value="pending">Pending</option>
+                                                                <option value="cancelled">Cancelled</option>
+                                                            </select></td>
+                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#ODER02</td>
+                                                        <td>0010</td>
+                                                        <td>09/01/2023</td>
+                                                        <td>09/03/2023</td>
+                                                        <td>$162,700</td>
+                                                        <td>COD</td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
+                                                        <td><select class="form-select-sm statusSelect statusColor">
+                                                                <option value="completed">Completed</option>
+                                                                <option value="pending">Pending</option>
+                                                                <option value="cancelled">Cancelled</option>
+                                                            </select></td>
+                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#ODER03</td>
+                                                        <td>0011</td>
+                                                        <td>10/01/2023</td>
+                                                        <td>10/05/2023</td>
+                                                        <td>$162,700</td>
+                                                        <td>COD</td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
+                                                        <td><select class="form-select-sm statusSelect statusColor">
+                                                                <option value="completed">Completed</option>
+                                                                <option value="pending">Pending</option>
+                                                                <option value="cancelled">Cancelled</option>
+                                                            </select></td>
+                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#ODER04</td>
+                                                        <td>0021</td>
+                                                        <td>08/11/2023</td>
+                                                        <td>08/15/2023</td>
+                                                        <td>$300,000</td>
+                                                        <td>ONLINE</td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
+                                                        <td><select class="form-select-sm statusSelect statusColor">
+                                                                <option value="completed">Completed</option>
+                                                                <option value="pending">Pending</option>
+                                                                <option value="cancelled">Cancelled</option>
+                                                            </select></td>
+                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#ODER05</td>
+                                                        <td>0006</td>
+                                                        <td>05/11/2023</td>
+                                                        <td>05/12/2023</td>
+                                                        <td>$200,000</td>
+                                                        <td>ONLINE</td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
+                                                        <td><select class="form-select-sm statusSelect statusColor">
+                                                                <option value="completed">Completed</option>
+                                                                <option value="pending">Pending</option>
+                                                                <option value="cancelled">Cancelled</option>
+                                                            </select></td>
+                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal fade" role="dialog" tabindex="-1" id="productDetailModal" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="productDetailModalLabel">Product Details</h5><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Invoice ID: <span id="invoiceId"></span></p>
+                                                        <div>
+                                                            <table class="table table-striped table-hover" id="productDetailsTable" style="border-collapse:separate;border-spacing:0 15px;">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>ProductName</th>
+                                                                        <th>Product ID</th>
+                                                                        <th>Color</th>
+                                                                        <th>Size ID</th>
+                                                                        <th>Quantity</th>
+                                                                        <th>Price</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody id="productDetailsBody"></tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 align-self-center">
+                                            <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#statusFilter').change(function(){
+            var selectedStatus = $(this).val();
+            console.log('Selected status: ' + selectedStatus); // Debug line
+            $('tbody tr').each(function(){
+                var status = $(this).find('.statusSelect').val();
+                console.log('Row status: ' + status); // Debug line
+                if (selectedStatus == 'All') {
+                    $(this).show();
+                } else if (status == selectedStatus) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.statusSelect').change(function(){
+            var status = $(this).val();
+            $(this).removeClass('status-completed status-pending status-cancelled');
+            $(this).addClass('status-' + status);
+            $(this).find('option').each(function() {
+                $(this).removeClass('status-completed status-pending status-cancelled');
+                $(this).addClass('status-' + $(this).val());
+            });
+        }).trigger('change');
+    });
+</script><script>$(document).ready(function(){
+    $('#searchButton').click(function(){
+        var searchTerm = $('#searchInput').val().toLowerCase();
+        var rows = document.querySelectorAll('#dataTable tbody tr');
+        rows.forEach(function(row) {
+            var cells = row.getElementsByTagName('td');
+
+            var cellArray = Array.prototype.slice.call(cells);
+            if (cellArray.some(function(cell) {
+                return cell.innerText.toLowerCase().includes(searchTerm);
+            })) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+});
+</script><script>
+    $(document).ready(function(){
+        $('#dataTable_length button').click(function(e){
+            e.preventDefault();
+            var createdTime = new Date($('#createdTime').val());
+            var completedTime = new Date($('#completedTime').val());
+            $('tbody tr').each(function(){
+                var orderDate = new Date($(this).find('td:nth-child(3)').text()); // assuming the date is in the 3rd column
+                if (orderDate >= createdTime && orderDate <= completedTime) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script><script>
+// Function to simulate fetching product details from a database
+function fetchProductDetails(invoiceId) {
+    return new Promise((resolve, reject) => {
+        // Simulate a delay with setTimeout
+        setTimeout(() => {
+            // Mock product details
+            var products = [
+                {
+                    productCategoryId: 1,
+                    productId: 101,
+                    color: 'Red',
+                    sizeId: 1,
+                    quantity: 2,
+                    price: 50.00
+                },
+                // More products...
+            ];
+
+            resolve(products);
+        }, 1000);
+    });
+}
+
+// Function to populate the product details table
+async function populateProductDetailsTable(invoiceId) {
+    // Fetch the product details
+    var products = await fetchProductDetails(invoiceId);
+
+    // Get the table body
+    var tableBody = document.getElementById('productDetailsBody');
+
+    // Clear the table body
+    tableBody.innerHTML = '';
+
+    // Add a row for each product
+    for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+
+        // Create a new row and cells
+        var row = document.createElement('tr');
+        var productCategoryIdCell = document.createElement('td');
+        var productIdCell = document.createElement('td');
+        var colorCell = document.createElement('td');
+        var sizeIdCell = document.createElement('td');
+        var quantityCell = document.createElement('td');
+        var priceCell = document.createElement('td');
+
+        // Set the cell text
+        productCategoryIdCell.textContent = product.productCategoryId;
+        productIdCell.textContent = product.productId;
+        colorCell.textContent = product.color;
+        sizeIdCell.textContent = product.sizeId;
+        quantityCell.textContent = product.quantity;
+        priceCell.textContent = '$' + product.price.toFixed(2);
+
+        // Add the cells to the row
+        row.appendChild(productCategoryIdCell);
+        row.appendChild(productIdCell);
+        row.appendChild(colorCell);
+        row.appendChild(sizeIdCell);
+        row.appendChild(quantityCell);
+        row.appendChild(priceCell);
+
+        // Add the row to the table body
+        tableBody.appendChild(row);
+    }
+}
+
+// Call the function to populate the table
+populateProductDetailsTable('ODER01');
+
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
