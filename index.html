@@ -109,12 +109,17 @@
                                     <div class="row d-flex justify-content-between">
                                         <div class="col d-flex flex-row align-items-xxl-center"><label class="form-label me-2 mb-0" for="createdTime" style="min-width: 105px;">Created Time :</label><input class="form-control-sm me-2 form-control" id="createdTime" type="date" style="min-width: 125px;"><label class="form-label mb-0 me-2" for="completedTime" style="min-width: 125px;">Completed Time:</label><input class="form-control-sm form-control me-2" id="completedTime" type="date" style="min-width: 125px;"><button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-search fs-6"></i></button></div>
                                         <div class="col-5">
-                                            <div class="d-flex flex-row justify-content-end align-items-center dataTables_filter" id="dataTable_filter"><select class="form-select-sm form-select me-2" aria-label="Status filter" id="statusFilter" style="width:auto;">
+                                            <div class="d-flex flex-row justify-content-end align-items-center dataTables_filter" id="dataTable_filter">
+                                                <select class="form-select-sm form-select me-2" aria-label="Status filter" id="statusFilter" style="width:auto;">
                                                     <option value="All" selected="">All</option>
-                                                    <option value="completed">Completed</option>
-                                                    <option value="pending">Pending</option>
+                                                    <option value="not confirmed">Not Confirmed</option>
+                                                    <option value="awaiting delivery">Awaiting Delivery</option>
                                                     <option value="cancelled">Cancelled</option>
-                                                </select><input class="form-control-sm form-control me-2" type="search" aria-controls="dataTable" id="searchInput" placeholder="Search" style="width:216.8px;"><button class="btn btn-primary btn-sm" id="searchButton" type="button">Search</button></div>
+                                                    <option value="in progress">In Progress</option>
+                                                    <option value="completed">Completed</option>
+                                                    <option value="undeliverable">Undeliverable</option>
+                                                </select>                                                
+                                                <input class="form-control-sm form-control me-2" type="search" aria-controls="dataTable" id="searchInput" placeholder="Search" style="width:216.8px;"><button class="btn btn-primary btn-sm" id="searchButton" type="button">Search</button></div>
                                         </div>
                                     </div>
                                     <div id="dataTable-1" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
@@ -141,13 +146,13 @@
                                                         <td>11/12/2023</td>
                                                         <td>$162,700</td>
                                                         <td>COD</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
-                                                        <td><select class="form-select-sm statusSelect statusColor">
-                                                                <option value="completed">Completed</option>
-                                                                <option value="pending">Pending</option>
-                                                                <option value="cancelled">Cancelled</option>
-                                                            </select></td>
-                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button">ProductDetail</button></td>
+                                                        <td>
+                                                            <select class="form-select-sm statusSelect statusColor">
+                                                                <option value="not confirmed">Not Confirmed</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><button class="btn btn-primary btn-sm btn-update" style="height:33px;">Update</button></td>
                                                     </tr>
                                                     <tr>
                                                         <td>#ODER02</td>
@@ -156,13 +161,13 @@
                                                         <td>09/03/2023</td>
                                                         <td>$162,700</td>
                                                         <td>COD</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
-                                                        <td><select class="form-select-sm statusSelect statusColor">
-                                                                <option value="completed">Completed</option>
-                                                                <option value="pending">Pending</option>
-                                                                <option value="cancelled">Cancelled</option>
-                                                            </select></td>
-                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button">ProductDetail</button></td>
+                                                        <td>
+                                                            <select class="form-select-sm statusSelect statusColor">
+                                                                <option value="not confirmed">Not Confirmed</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><button class="btn btn-primary btn-sm btn-update" style="height:33px;">Update</button></td>
                                                     </tr>
                                                     <tr>
                                                         <td>#ODER03</td>
@@ -171,13 +176,13 @@
                                                         <td>10/05/2023</td>
                                                         <td>$162,700</td>
                                                         <td>COD</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
-                                                        <td><select class="form-select-sm statusSelect statusColor">
-                                                                <option value="completed">Completed</option>
-                                                                <option value="pending">Pending</option>
-                                                                <option value="cancelled">Cancelled</option>
-                                                            </select></td>
-                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button">ProductDetail</button></td>
+                                                        <td>
+                                                            <select class="form-select-sm statusSelect statusColor">
+                                                                <option value="not confirmed">Not Confirmed</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><button class="btn btn-primary btn-sm btn-update" style="height:33px;">Update</button></td>
                                                     </tr>
                                                     <tr>
                                                         <td>#ODER04</td>
@@ -186,13 +191,13 @@
                                                         <td>08/15/2023</td>
                                                         <td>$300,000</td>
                                                         <td>ONLINE</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
-                                                        <td><select class="form-select-sm statusSelect statusColor">
-                                                                <option value="completed">Completed</option>
-                                                                <option value="pending">Pending</option>
-                                                                <option value="cancelled">Cancelled</option>
-                                                            </select></td>
-                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button">ProductDetail</button></td>
+                                                        <td>
+                                                            <select class="form-select-sm statusSelect statusColor">
+                                                                <option value="not confirmed">Not Confirmed</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><button class="btn btn-primary btn-sm btn-update" style="height:33px;">Update</button></td>
                                                     </tr>
                                                     <tr>
                                                         <td>#ODER05</td>
@@ -201,13 +206,13 @@
                                                         <td>05/12/2023</td>
                                                         <td>$200,000</td>
                                                         <td>ONLINE</td>
-                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button"> ProductDetail </button></td>
-                                                        <td><select class="form-select-sm statusSelect statusColor">
-                                                                <option value="completed">Completed</option>
-                                                                <option value="pending">Pending</option>
-                                                                <option value="cancelled">Cancelled</option>
-                                                            </select></td>
-                                                        <td><button class="btn btn-primary btn-sm" style="height:33px;">Update</button></td>
+                                                        <td><button class="btn btn-primary btn-sm" data-bs-target="#productDetailModal" data-bs-toggle="modal" type="button">ProductDetail</button></td>
+                                                        <td>
+                                                            <select class="form-select-sm statusSelect statusColor">
+                                                                <option value="not confirmed">Not Confirmed</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><button class="btn btn-primary btn-sm btn-update" style="height:33px;">Update</button></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -253,8 +258,9 @@
                                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                                     <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
-                                                </ul>
-                                            </nav>
+                                                    </ul>
+                                                </nav>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -262,23 +268,22 @@
                         </div>
                     </div>
                 </div>
+                <footer class="bg-white sticky-footer">
+                    <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
+                    </div>
+                </footer>
             </div>
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
-    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
 <script>
     $(document).ready(function(){
         $('#statusFilter').change(function(){
             var selectedStatus = $(this).val();
-            console.log('Selected status: ' + selectedStatus); // Debug line
             $('tbody tr').each(function(){
                 var status = $(this).find('.statusSelect').val();
-                console.log('Row status: ' + status); // Debug line
                 if (selectedStatus == 'All') {
                     $(this).show();
                 } else if (status == selectedStatus) {
@@ -288,38 +293,98 @@
                 }
             });
         });
-    });
+    });    
 </script>
 <script>
     $(document).ready(function(){
-        $('.statusSelect').change(function(){
-            var status = $(this).val();
-            $(this).removeClass('status-completed status-pending status-cancelled');
-            $(this).addClass('status-' + status);
-            $(this).find('option').each(function() {
-                $(this).removeClass('status-completed status-pending status-cancelled');
-                $(this).addClass('status-' + $(this).val());
-            });
-        }).trigger('change');
-    });
-</script><script>$(document).ready(function(){
-    $('#searchButton').click(function(){
-        var searchTerm = $('#searchInput').val().toLowerCase();
-        var rows = document.querySelectorAll('#dataTable tbody tr');
-        rows.forEach(function(row) {
-            var cells = row.getElementsByTagName('td');
-
-            var cellArray = Array.prototype.slice.call(cells);
-            if (cellArray.some(function(cell) {
-                return cell.innerText.toLowerCase().includes(searchTerm);
-            })) {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
+        // Define the options for each status
+        var options = {
+            'not confirmed': ['awaiting delivery', 'cancelled'],
+            'awaiting delivery': ['in progress', 'cancelled'],
+            'in progress': ['completed', 'undeliverable'],
+            'cancelled': [],
+            'completed': [],
+            'undeliverable': []
+        };
+    
+        // Function to set color based on status
+        function setColorBasedOnStatus(statusElement, status) {
+            var color = '';
+            switch(status) {
+                case 'not confirmed':
+                    color = '#FFA500'; // Orange
+                    break;
+                case 'awaiting delivery':
+                    color = '#FFD700'; // Gold
+                    break;
+                case 'cancelled':
+                    color = '#FF4500'; // OrangeRed
+                    break;
+                case 'in progress':
+                    color = '#0000FF'; // Blue
+                    break;
+                case 'completed':
+                    color = '#008000'; // Green
+                    break;
+                case 'undeliverable':
+                    color = '#FF69B4'; // HotPink
+                    break;
+                default:
+                    color = 'black'; // Default color
             }
+            statusElement.css('color', color);
+        }
+    
+        // Function to update options based on status
+        function updateOptions(statusSelect, currentStatus) {
+            // Clear current options and add new ones based on the current status
+            statusSelect.empty();
+            statusSelect.append(new Option(currentStatus.charAt(0).toUpperCase() + currentStatus.slice(1), currentStatus)); // Add the current status option
+            if (options[currentStatus]) {
+                options[currentStatus].forEach(function(status) {
+                    statusSelect.append(new Option(status.charAt(0).toUpperCase() + status.slice(1), status));
+                });
+            }
+            // Set color for new options
+            setColorBasedOnStatus(statusSelect, currentStatus);
+        }
+    
+        // Event listener for the update button
+        $('.btn-update').click(function(){
+            var parentRow = $(this).closest('tr');
+            var statusSelect = parentRow.find('.statusSelect');
+            var currentStatus = statusSelect.val();
+    
+            // Update the dropdown options based on the current status
+            updateOptions(statusSelect, currentStatus);
+        });
+    
+        // Initialize the dropdown with only the 'not confirmed' option
+        $('.statusSelect').each(function() {
+            $(this).empty(); // Clear current options
+            $(this).append(new Option('Not Confirmed', 'not confirmed')); // Add only the 'not confirmed' option
+        });
+    });    
+</script>
+<script>
+    $(document).ready(function(){
+        $('#searchButton').click(function(){
+            var searchTerm = $('#searchInput').val().toLowerCase();
+            var rows = document.querySelectorAll('#dataTable tbody tr');
+            rows.forEach(function(row) {
+                var cells = row.getElementsByTagName('td');
+
+                var cellArray = Array.prototype.slice.call(cells);
+                if (cellArray.some(function(cell) {
+                    return cell.innerText.toLowerCase().includes(searchTerm);
+                })) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
         });
     });
-});
 </script><script>
     $(document).ready(function(){
         $('#dataTable_length button').click(function(e){
@@ -336,7 +401,8 @@
             });
         });
     });
-</script><script>
+</script>
+<script>
 // Function to simulate fetching product details from a database
 function fetchProductDetails(invoiceId) {
     return new Promise((resolve, reject) => {
@@ -409,8 +475,79 @@ async function populateProductDetailsTable(invoiceId) {
 populateProductDetailsTable('ODER01');
 
 </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/theme.js"></script>
 </body>
-
 </html>
+
+<script>
+    $(document).ready(function(){
+        // Function to set color based on status
+        function setColorBasedOnStatus(statusElement, status) {
+            var color = '';
+            switch(status) {
+                case 'not confirmed':
+                    color = '#FFA500'; // Orange
+                    break;
+                case 'awaiting delivery':
+                    color = '#FFD700'; // Gold (turned down yellow)
+                    break;
+                case 'cancelled':
+                    color = '#FF4500'; // OrangeRed (red)
+                    break;
+                case 'in progress':
+                    color = '#0000FF'; // Blue
+                    break;
+                case 'completed':
+                    color = '#008000'; // Green
+                    break;
+                case 'undeliverable':
+                    color = '#FF69B4'; // HotPink (pink asian)
+                    break;
+                default:
+                    color = 'black'; // Default color
+            }
+            statusElement.css('color', color);
+        }
+    
+        // Function to update options based on status
+        function updateOptions(statusSelect, currentStatus) {
+            statusSelect.empty(); // Clear current options
+            var options = {
+                'not confirmed': ['not confirmed', 'awaiting delivery', 'cancelled'],
+                'awaiting delivery': ['awaiting delivery', 'in progress', 'cancelled'],
+                'in progress': ['in progress', 'completed', 'undeliverable'],
+                'cancelled': ['cancelled'],
+                'completed': ['completed'],
+                'undeliverable': ['undeliverable']
+            };
+            options[currentStatus].forEach(function(status) {
+                statusSelect.append(new Option(status.charAt(0).toUpperCase() + status.slice(1), status));
+            });
+            // Set color for new options
+            setColorBasedOnStatus(statusSelect, currentStatus);
+        }
+    
+        // Initialize each statusSelect with correct options and color
+        $('.statusSelect').each(function() {
+            var currentStatus = $(this).val();
+            updateOptions($(this), currentStatus);
+        });
+    
+        // Update options and color when status changes
+        $('.statusSelect').change(function(){
+            var selectedStatus = $(this).val();
+            updateOptions($(this), selectedStatus);
+        });
+    
+        // Event listener for the update button
+        $('.btn-update').click(function(){
+            var parentRow = $(this).closest('tr');
+            var statusSelect = parentRow.find('.statusSelect');
+            var selectedStatus = statusSelect.val();
+    
+            // Update the dropdown options based on the newly selected status
+            updateOptions(statusSelect, selectedStatus);
+        });
+    });    
+</script>
